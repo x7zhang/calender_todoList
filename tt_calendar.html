@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assign_May Calender</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/calender.css">
+</head>
+<body>
+<div id="calender">
+    <table id="timeZone">
+        <thead>
+        <tr>
+            <th class='prev' onclick="calendar.prevs()">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </th>
+            <th colspan="5" class="switch"></th>
+            <th class='next' onclick="calendar.nexts()">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </th>
+        </tr>
+        <tr>
+            <td>Sun</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thur</td>
+            <td>Fri</td>
+            <td>Sat</td>
+        </tr>
+        </thead>
+        <tbody id="dataTable">
+        </tbody>
+    </table>
+</div>
+
+<div id="todoList">
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+    </ul>
+
+</div>
+<script src="js/calender.js"></script>
+<script src="js/todoList.js"></script>
+</body>
+</html>
